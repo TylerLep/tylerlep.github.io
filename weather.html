@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather layer</title>
+
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA89HGhYGbzJ3dB8YpzybQuudABgjiwpzU' type='text/javascript'></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA89HGhYGbzJ3dB8YpzybQuudABgjiwpzU&libraries=places&callback=initialize"
+         async defer ></script>
+
+    
+    <script src="http://openlayers.org/api/OpenLayers.js"></script>
+    
+    <script src="js/weathermap.js" type="text/javascript" charset="utf-8"></script> 
+    
+    <link rel="stylesheet" href="css/weather.css">
+
+</head>
+<body>
+<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+<div id="map-canvas"></div>
+    
+    
+    <div class="container">
+    <h1>Search for a specified location</h1>
+    <p>Type a city and click "Search".</p>
+    <form id="search-form">
+        <input type="text" id="query" value="" class="form-control" placeholder="Type a City Name"/>
+        <input type="submit" id="search" class="btn btn-primary" value="Search" />
+    </form>
+    <div id="results"></div>
+</div>
+    
+    <button href="" onclick="clickroute(37.7749, -122.4194)">test</button>
+
+
+    <style> 
+    html, body {
+        height: 70%;
+        margin: 0;
+        padding: 0;
+      }
+    
+    </style>
+
+    
+
+</body>
+</html>
