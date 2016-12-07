@@ -181,7 +181,7 @@ function clickroute(lati,long) {
         windSpeed: weatherItem.wind.speed,
         windDegrees: weatherItem.wind.deg,
         windGust: weatherItem.wind.gust,
-        icon: "http://openweathermap.org/img/w/"
+        icon: "https://openweathermap.org/img/w/"
               + weatherItem.weather[0].icon  + ".png",
         coordinates: [weatherItem.coord.lon, weatherItem.coord.lat]
       },
@@ -196,7 +196,7 @@ function clickroute(lati,long) {
       
       var weatherSearch = function(query){
           
-          url: 'http://api.openweathermap.org/data/2.5/box/city?bbox='
+          url: 'https://api.openweathermap.org/data/2.5/box/city?bbox='
       }
 
       
