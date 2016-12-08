@@ -13,7 +13,7 @@
 //});
 
 //fdynamically load weather data into html page - hard code boston with https error
-function loadWeather(location) {
+//function loadWeather(location) {
     $(document).ready(function() {
         $.simpleWeather({
 //            zipcode: '',
@@ -32,7 +32,7 @@ function loadWeather(location) {
             }
         });
     });
-}
+
 
 
 $(document).ready(function() {
