@@ -1,26 +1,24 @@
 //check for geolocation support in browser- HTTPS preventing this from happening
-if ("geolocation" in navigator) {
-    loadWeather("Boston,MA", "")
-    
+//if ("geolocation" in navigator) { 
 //    navigator.geolocation.getCurrentPosition(function(position) {
 //        loadWeather(position.coords.latitude + ',' + position.coords.longitude);
-    });
-} else {
-    loadWeather("Boston,MA", "");
-}
+//    });
+//} else {
+//    loadWeather("Boston,MA", "");
+//}
 
 //set weather refresh -- throws error when background refresh...need to fix
 //$(document).ready(function(){
 //    setInterval(loadWeather,10000);
 //});
 
-//fdynamically load weather data into html page
+//fdynamically load weather data into html page - hard code boston with https error
 function loadWeather(location, woeid) {
     $(document).ready(function() {
         $.simpleWeather({
             zipcode: '',
             woeid: woeid,
-            location: location,
+            location: "Boston, MA",
             unit: 'f',
             success: function(weather) {
                 html = '<h2>' + weather.temp + '&deg;' + weather.units.temp + '</h2>';
