@@ -16,7 +16,7 @@
 function loadWeather(location) {
     $(document).ready(function() {
         $.simpleWeather({
-            zipcode: '',
+//            zipcode: '',
 //            woeid: woeid,
             location: "Boston, MA",
             unit: 'f',
