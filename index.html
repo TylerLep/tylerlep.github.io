@@ -1,50 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Weather layer</title>
-
-    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA89HGhYGbzJ3dB8YpzybQuudABgjiwpzU' type='text/javascript'></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA89HGhYGbzJ3dB8YpzybQuudABgjiwpzU&libraries=places&callback=initialize"
-         async defer ></script>
-
-    
-    <script src="https://openlayers.org/api/OpenLayers.js"></script>
-    
-    <script src="js/weathermap.js" type="text/javascript" charset="utf-8"></script> 
-    
-    <link rel="stylesheet" href="css/weather.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700,inherit,400" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
-<input id="pac-input" class="controls" type="text" placeholder="Search Box">
-<div id="map-canvas"></div>
-    
-    
-    <div class="container">
-    <h1>Search for a specified location</h1>
-    <p>Type a city and click "Search".</p>
-    <form id="search-form">
-        <input type="text" id="query" value="" class="form-control" placeholder="Type a City Name"/>
-        <input type="submit" id="search" class="btn btn-primary" value="Search" />
-    </form>
-    <div id="results"></div>
-</div>
-    
-    <button href="" onclick="clickroute(37.7749, -122.4194)">test</button>
+<body class="body page-index clearfix">
 
-
-    <style> 
-    html, body {
-        height: 70%;
-        margin: 0;
-        padding: 0;
-      }
     
-    </style>
-
+<div id="weather" class="weather"></div>
+    
+  <div class="container clearfix">
+    <p class="condition">Current Conditions:</p>
+    <p class="location"></p>
+    <p class="temperature"></p>
+    <div class="climate_bg"></div>
+    <div class="info_bg">
+      <img class="dropicon" src="images/Droplet.svg">
+      <p class="humidity"></p>
+      <img class="windicon" src="images/Wind.svg">
+      <div class="windspeed"></div>
+    </div>
+  </div>
+    
+    <div class="container2">
+    <p class="condition2">Current Conditions:</p>
+    <p class="location"></p>
+    <p class="temperature"></p>
+    <div class="climate_bg"></div>
+    <div class="info_bg">
+      <img class="dropicon" src="images/Droplet.svg">
+      <p class="humidity"></p>
+      <img class="windicon" src="images/Wind.svg">
+      <div class="windspeed"></div>
+    </div>
+  </div>
+    
+    <div class="container3">
+    <p class="condition3">Current Conditions:</p>
+    <p class="location"></p>
+    <p class="temperature"></p>
+    <div class="climate_bg"></div>
+    <div class="info_bg">
+      <img class="dropicon" src="images/Droplet.svg">
+      <p class="humidity"></p>
+      <img class="windicon" src="images/Wind.svg">
+      <div class="windspeed"></div>
+    </div>
+  </div>
+    
+    <div id="weather" class="weather"></div>
+    
+    <iframe src="weathermap/weather.html"></iframe>
     
 
 </body>
+    
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+    <script src = "js/weather.js"></script>
 </html>

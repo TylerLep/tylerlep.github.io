@@ -1,5 +1,5 @@
   body {
-  background-color: #bebebe;
+  background-color: #34495E;
   font: 400 1em/1.38 Montserrat;
   color: #ffffff;
 }
@@ -31,18 +31,50 @@
 }
 
 .container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  position: fixed;
+  top: 50px;
+  bottom: 10;
   left: 0;
-  right: 0;
+  right: 20;
   z-index: 9;
   width: 398px;
   height: 208px;
   margin: auto;
-  border-radius: 10px;
-  background-color: rgb(0, 0, 0);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  background-color: rgb(20, 70, 70);
+  box-shadow: 0 20px 50px rgba(20, 70, 70, 0.5);
+  opacity: 0.8;
+}
+
+.container2 {
+  position: fixed;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  right: 20;
+  z-index: 10;
+  width: 398px;
+  height: 208px;
+  margin: auto;
+  border-radius: 100px;
+  background-color: rgb(50, 0, 90);
+  box-shadow: 0 20px 50px rgba(50, 0, 90, 0.5);
+  opacity: 0.8;
+}
+
+.container3 {
+  position: fixed;
+  top: 5;
+  bottom: 20px;
+  left: 0;
+  right: 20;
+  z-index: 10;
+  width: 398px;
+  height: 208px;
+  margin: auto;
+  border-radius: 100px;
+  background-color: rgb(243, 156, 18);
+  box-shadow: 0 20px 50px rgba(243, 156, 185, 0.5);
   opacity: 0.8;
 }
 
@@ -108,6 +140,79 @@
   color: rgb(255, 255, 255);
 }
 
+.location2 {
+  position: absolute;
+  top: 128px;
+  left: 63px;
+  z-index: 8;
+  width: 108px;
+  min-height: 59px;
+  font-size: 1.313em;
+  font-weight: 400;
+  line-height: 1.38;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.location3 {
+  position: absolute;
+  top: 128px;
+  left: 63px;
+  z-index: 8;
+  width: 108px;
+  min-height: 59px;
+  font-size: 1.313em;
+  font-weight: 400;
+  line-height: 1.38;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.condition {
+  position: absolute;
+  top: -28px;
+  left: 80px;
+  z-index: 7;
+  width: 200px;
+  min-height: 28px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+background: rgb(20, 70, 70);
+border-radius: 10px;
+}
+
+.condition2 {
+  position: absolute;
+  top: -28px;
+  left: 80px;
+  z-index: 7;
+  width: 200px;
+  min-height: 28px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+background: rgb(50, 0, 90);
+border-radius: 10px;
+}
+
+.condition3 {
+  position: absolute;
+  top: -28px;
+  left: 80px;
+  z-index: 7;
+  width: 200px;
+  min-height: 28px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+background: rgb(243, 156, 18);
+border-radius: 10px;
+}
+
 .temperature {
   position: absolute;
   top: 38px;
@@ -148,36 +253,48 @@
   margin-bottom: -.2em;
 }
 
-#pac-input {
-        background-color: #fff;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
-        text-overflow: ellipsis;
-        width: 300px;
-      }
+.weather {
+  position: fixed;
+    color: black;
+  left: 700px;
+  width: 425px;
+  margin: 0px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-      #pac-input:focus {
-        border-color: #4d90fe;
-      }
+.weather h2 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 150px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    border-color: #58D68D;
+}
 
-      .pac-container {
-        font-family: Roboto;
-      }
+.weather ul {
+  margin: 0;
+  padding: 0;
+}
 
-      #type-selector {
-        color: #fff;
-        background-color: #4d90fe;
-        padding: 5px 11px 0px 11px;
-      }
+.weather li {
+  background: #fff;
+  background: rgba(255,255,255,0.90);
+  padding: 20px;
+  display: inline-block;
+  border-radius: 0px;
+}
 
-      #type-selector label {
-        font-family: Roboto;
-        font-size: 13px;
-        font-weight: 300;
-      }
-      #target {
-        width: 345px;
-      }
+.weather .currently {
+  margin: 0 20px;
+}
+
+iframe {
+    position:absolute;
+    width: 70%;
+    margin-left: 30%;
+    margin-top: 20%;
+    height: 450px;
+    border: 1px dotted red;
+}
