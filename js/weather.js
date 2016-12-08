@@ -13,11 +13,11 @@
 //});
 
 //fdynamically load weather data into html page - hard code boston with https error
-function loadWeather(location, woeid) {
+function loadWeather(location) {
     $(document).ready(function() {
         $.simpleWeather({
             zipcode: '',
-            woeid: woeid,
+//            woeid: woeid,
             location: "Boston, MA",
             unit: 'f',
             success: function(weather) {
