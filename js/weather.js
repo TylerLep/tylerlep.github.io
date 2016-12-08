@@ -1,4 +1,4 @@
-//check for geolocation support in browser- HTTPS preventing this from happening
+//check for geolocation support in browser- HTTPS on heroku preventing this from happening :(
 //if ("geolocation" in navigator) { 
 //    navigator.geolocation.getCurrentPosition(function(position) {
 //        loadWeather(position.coords.latitude + ',' + position.coords.longitude);

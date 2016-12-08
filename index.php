@@ -53,7 +53,7 @@
     
     <div id="weather" class="weather"></div>
     
-    <iframe src="weathermap/weather.html"></iframe>
+    <iframe src="weathermap/weather.php"></iframe>
     
 
 </body>
