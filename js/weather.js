@@ -14,8 +14,29 @@
 
 //fdynamically load weather data into html page - hard code boston with https error
 //function loadWeather(location) {
-    $(document).ready(function() {
-        $.simpleWeather({
+//    $(document).ready(function() {
+//        $.simpleWeather({
+////            zipcode: '',
+////            woeid: woeid,
+//            location: "Boston,MA",
+//            unit: 'f',
+//            success: function(weather) {
+//                html = '<h2>' + weather.temp + '&deg;' + weather.units.temp + '</h2>';
+//                html += '<ul><li>' + weather.city + ', ' + weather.region + '</li>';
+//                html += '<li class="currently">' + weather.currently + '</li>';
+//
+//                $("#weather").html(html);
+//            },
+//            error: function(error) {
+//                $("#weather").html('<p>' + error + '</p>');
+//            }
+//        });
+//    });
+
+
+
+$(document).ready(function() {
+    $.simpleWeather({
 //            zipcode: '',
 //            woeid: woeid,
             location: "Boston,MA",
@@ -31,11 +52,7 @@
                 $("#weather").html('<p>' + error + '</p>');
             }
         });
-    });
-
-
-
-$(document).ready(function() {
+    
     $.simpleWeather({
         location: "New York,NY",
         unit: 'f',
