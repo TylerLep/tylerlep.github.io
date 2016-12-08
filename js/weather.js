@@ -1,7 +1,9 @@
-//check for geolocation support in browser
+//check for geolocation support in browser- HTTPS preventing this from happening
 if ("geolocation" in navigator) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-        loadWeather(position.coords.latitude + ',' + position.coords.longitude);
+    loadWeather("Boston,MA", "")
+    
+//    navigator.geolocation.getCurrentPosition(function(position) {
+//        loadWeather(position.coords.latitude + ',' + position.coords.longitude);
     });
 } else {
     loadWeather("Boston,MA", "");
