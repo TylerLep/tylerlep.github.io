@@ -18,7 +18,7 @@
         $.simpleWeather({
 //            zipcode: '',
 //            woeid: woeid,
-            location: "Boston, MA",
+            location: "Boston,MA",
             unit: 'f',
             success: function(weather) {
                 html = '<h2>' + weather.temp + '&deg;' + weather.units.temp + '</h2>';
