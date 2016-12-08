@@ -35,7 +35,7 @@
 
 
 
-$(function() {
+$(document).ready(function() {
     $.simpleWeather({
 //            zipcode: '',
 //            woeid: woeid,
